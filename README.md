@@ -1,1 +1,1 @@
-# 3D-Modelling-Class
+3D Modelling class
