@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff05 scene
 //Name: Prop_one_first draft.ma
-//Last modified: Wed, Jan 24, 2018 05:55:03 PM
+//Last modified: Wed, Jan 24, 2018 06:03:20 PM
 //Codeset: 1252
 requires maya "2017ff05";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "AEAD1ACF-477F-D81B-B607-03B8E35105EC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 28 21 28 ;
-	setAttr ".r" -type "double3" -27.938352729602379 44.999999999999972 -5.172681101354183e-014 ;
+	setAttr ".t" -type "double3" 31.806849260130186 25.797351571843116 18.215954326420476 ;
+	setAttr ".r" -type "double3" -35.138352729607192 60.200000000001509 3.1999208518766965e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "847E2AC8-4314-E9F6-9803-D1A9EBAC3CD3";
 	setAttr -k off ".v" no;
@@ -28,17 +28,18 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
 	rename -uid "08651AAB-4506-BCEB-8E41-C0999ECED471";
-	setAttr ".t" -type "double3" 0 1000.1 0 ;
+	setAttr ".t" -type "double3" 0.47161575326419136 1000.1001111995835 2.2206683407679134e-013 ;
 	setAttr ".r" -type "double3" -89.999999999999986 0 0 ;
 createNode camera -s -n "topShape" -p "top";
 	rename -uid "5009F7C3-498F-4BE4-B841-BB88214D0A46";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
-	setAttr ".coi" 1000.1;
-	setAttr ".ow" 58.373489880397081;
+	setAttr ".coi" 1000.1001111995832;
+	setAttr ".ow" 29.076392614610789;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
+	setAttr ".tp" -type "double3" 0.47161575326419136 0 0 ;
 	setAttr ".hc" -type "string" "viewSet -t %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
@@ -104,14 +105,14 @@ createNode imagePlane -n "imagePlaneShape2" -p "imagePlane2";
 	setAttr ".cs" -type "string" "sRGB";
 createNode transform -n "imagePlane3";
 	rename -uid "76C5E5E1-46EE-2940-EF1C-CDB2BE22F58E";
-	setAttr ".t" -type "double3" 1.8848298990114447 0 0 ;
+	setAttr ".t" -type "double3" 0.47161575326419136 0 0 ;
 	setAttr ".r" -type "double3" -89.999999999999986 0 0 ;
-	setAttr ".s" -type "double3" 0.4345848127367446 0.4345848127367446 0.4345848127367446 ;
+	setAttr ".s" -type "double3" 0.2536945284636713 0.2536945284636713 0.2536945284636713 ;
 createNode imagePlane -n "imagePlaneShape3" -p "imagePlane3";
 	rename -uid "8CB750CB-40A9-7238-FEBB-2D96D0D49B1A";
 	setAttr -k off ".v";
 	setAttr ".fc" 204;
-	setAttr ".imn" -type "string" "C:/Users/10751732/Desktop/prop one//refimages/Top.png";
+	setAttr ".imn" -type "string" "C:/Users/10751732/Desktop/3D-Modelling-Class/prop one/refimages/Top.png";
 	setAttr ".cov" -type "short2" 2048 2048 ;
 	setAttr ".dlc" no;
 	setAttr ".w" 20.48;
