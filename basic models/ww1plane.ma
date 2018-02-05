@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: ww1plane.ma
-//Last modified: Mon, Feb 05, 2018 12:42:31 AM
+//Last modified: Mon, Feb 05, 2018 12:54:43 AM
 //Codeset: 1252
 requires maya "2018";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "2.0.1";
@@ -16,7 +16,7 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "9ADF5641-42B4-112C-F390-20A26DBEAC21";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.63266195671843084 1.5714875166505862 -0.37267868973556839 ;
+	setAttr ".t" -type "double3" -3.0333924461321735 1.6420682806951212 -0.86599711478003527 ;
 	setAttr ".r" -type "double3" -707.28141405233418 -101.90319359037262 2865.3273099859489 ;
 	setAttr ".rp" -type "double3" 5.5511151231257827e-17 -2.2204460492503131e-16 1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" 9.133514647388704e-17 -7.1541305387014506e-17 -1.5186554873547604e-17 ;
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "7536FF92-4E64-E257-94BB-EBB45AB7A6CD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 0.39896825919679246;
+	setAttr ".coi" 2.8508760053288138;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
